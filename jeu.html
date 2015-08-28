@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Calcule d'itinéraire">
+        <meta name="author" content="Frey_b">
+        <link rel="stylesheet" href="map.css" />
+        <title>My map</title>
+    </head>
+    <body>
+		<div id="content">
+			<h1>Bienvenue dans My Maps Jeu!</h1>
+            <p>Le principe est simple: cliquez sur le marker, et cliquez ensuite sur la zone de la carte où vous pensez que se trouve la réponse.</p>
+            <p>Apparaitra ensuite un nouveau marker! Trouvez toutes les réponses avec le moins d'erreur possible!</p>
+            <p><a href="index.html">Envi de voyager? Trouvez votre chemin grâce a My Maps!</a></p>
+            <div id="score"></div>
+			<div id="map_content">
+				<p>Veuillez patienter pendant le chargement de la carte...</p>
+            </div>
+            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true&amp;libraries=places,visualization"></script>
+            <script type="text/javascript" src="jeu.js"></script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+#content {
+    width: 888px;
+    margin: auto;
+}
+#map_content {
+    height: 600px;
+    width: 800px;
+    margin: auto;
+}
+input {
+	width: 200px;
+}
+#suppr {
+	display: none;
+}
+#enregistrer {
+	display: none;
+}
+#supprimer {
+	display: none;
+}
+iframe {
+	width: 888px;
+	height: 336px;
+}

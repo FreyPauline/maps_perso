@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='fr' manifest="offline.appcache">
+    <head>
+<!--         <meta charset="utf-8"> -->
+        <meta name="description" content="Calcule d'itinéraire">
+        <meta name="author" content="Frey_b">
+        <link rel="stylesheet" href="map.css" />
+        <title>My map</title>
+    </head>
+    <body>
+        <div id="content">
+            <h1>My Map</h1>
+            <p><a href="jeu.html">Envi de jouer?</a></p>
+            <div id="box"></div>
+            <form id="form" method="post">
+                <label for="depart">Votre départ</label>
+                <input id="depart" type="text" name="depart"/>
+                <label for="arrive">Votre arrivé</label>
+                <input id="arrive" type="text" name="arrive"/>
+                <select id="mode">
+                    <option value="DRIVING">Voiture</option>
+                    <option value="WALKING">A pied</option>
+                    <option value="TRANSIT">Transport en commun</option>
+                </select>
+                <input type="submit" id="rechercher" name="rechercher" value="rechercher"/>
+                <input type='submit' id='suppr' name='suppr' value='supprimer les markers'/>
+            </form>
+
+            <div id="map_content">
+            </div>
+            <div id="etape_itineraire">
+            </div>
+            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true&amp;libraries=places,visualization"></script>
+            <script type="text/javascript" src="map.js"></script>
+        </div>
+
+    </body>
+</html>
